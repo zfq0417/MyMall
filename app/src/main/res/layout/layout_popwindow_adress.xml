@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_400"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/txt_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20" />
+
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@id/txt_province" />
+
+        <TextView
+            android:id="@+id/txt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_toRightOf="@+id/txt_city" />
+
+        <TextView
+            android:id="@+id/txt_submitb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.weigan.loopview.LoopView
+            android:id="@+id/adress_province"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:awv_isLoop="false"
+            app:awv_itemsVisibleCount="9"
+            app:awv_lineSpace="1"
+            app:awv_textsize="18" />
+
+        <com.weigan.loopview.LoopView
+            android:id="@+id/adress_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:awv_isLoop="false"
+            app:awv_itemsVisibleCount="9"
+            app:awv_lineSpace="1"
+            app:awv_textsize="18" />
+
+        <com.weigan.loopview.LoopView
+            android:id="@+id/adress_area"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:awv_isLoop="false"
+            app:awv_itemsVisibleCount="9"
+            app:awv_lineSpace="1"
+            app:awv_textsize="18" />
+    </LinearLayout>
+
+</LinearLayout>

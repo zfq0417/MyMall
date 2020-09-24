@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWrite"
+    android:orientation="horizontal"
+    tools:context=".ui.classification.ClassificationFragment">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/classif_tab"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:fitsSystemWindows="true"
+        android:scrollIndicators="bottom"
+        app:indicator_color="#FFFFFF"
+        app:indicator_corners="@dimen/dp_0_5"
+        app:indicator_gravity="left"
+        app:indicator_width="2dp"
+        app:tabSelectedTextColor="#66FF00"
+        app:tabTextColor="#DCD2D2"
+        app:tab_height="@dimen/dp_50"
+        app:tab_mode="scrollable" />
+
+    <View
+        android:layout_width="@dimen/dp_2"
+        android:layout_height="match_parent"
+        android:background="@color/colorHui" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/classif_vp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

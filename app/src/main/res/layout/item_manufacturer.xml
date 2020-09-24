@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_manu_pic_url"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:paddingBottom="@dimen/dp_5"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_manu_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="制造商"
+        android:textColor="@color/colorWrite"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_manu_pic_url"
+        app:layout_constraintLeft_toLeftOf="@+id/item_manu_pic_url"
+        app:layout_constraintRight_toRightOf="@+id/item_manu_pic_url"
+        app:layout_constraintTop_toTopOf="@+id/item_manu_pic_url" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

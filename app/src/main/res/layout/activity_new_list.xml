@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.actviity.NewListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150">
+
+
+        <ImageView
+            android:id="@+id/newlist_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_140"
+            android:background="@color/colorHui"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="大家都在买的严选好物"
+            android:textColor="@color/colorWrite"
+            android:textSize="@dimen/sp_16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/newlist_tv_zonghe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="综合"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/newlist_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="价格"
+                android:textSize="@dimen/sp_16"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/newlist_iv_shang"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_fan_xia"
+                app:layout_constraintLeft_toRightOf="@id/newlist_tv_price"
+                app:layout_constraintTop_toTopOf="@id/newlist_tv_price" />
+
+            <ImageView
+                android:id="@+id/newlist_iv_xia"
+                android:layout_width="@dimen/dp_10"
+                android:layout_height="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_fan_shang"
+                app:layout_constraintBottom_toBottomOf="@id/newlist_tv_price"
+                app:layout_constraintLeft_toRightOf="@id/newlist_tv_price" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/newlist_tv_classif"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="分类"
+            android:textSize="@dimen/sp_16" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:background="@color/colorHui" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newlist_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

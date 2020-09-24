@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@mipmap/img_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_login_name"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:hint="输入账号"
+        android:paddingLeft="@dimen/dp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_login_name">
+
+        <EditText
+            android:id="@+id/et_login_possword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入密码"
+            android:paddingLeft="@dimen/dp_15"
+            android:password="true" />
+
+        <ImageView
+            android:id="@+id/eye_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_eye_close" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="登录"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="注册"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

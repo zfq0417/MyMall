@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_newlist_iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_newlist_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_160"
+        android:maxLines="1"
+        android:text="商品"
+        android:textSize="@dimen/dp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_newlist_iv_img" />
+
+    <TextView
+        android:id="@+id/item_newlist_tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="￥9.99"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/dp_12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_newlist_tv_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

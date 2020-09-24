@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.classification.fragment.ClassTabFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100">
+
+            <ImageView
+                android:id="@+id/classtab_list_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorHui"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/classtab_list_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="周边精品，共享热爱"
+                android:textColor="@color/colorWrite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <View
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_1"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/classtab_list_front_name"
+                android:background="@color/colorHui" />
+
+            <TextView
+                android:id="@+id/classtab_list_front_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="志趣分类"
+                android:textSize="@dimen/sp_12" />
+
+            <View
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_1"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/classtab_list_front_name"
+                android:background="@color/colorHui" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classtab_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</ScrollView>

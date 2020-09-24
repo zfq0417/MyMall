@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.actviity.BrandXqActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/brandxq_list_pic_url"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_120"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/brandxq_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="制造商"
+                android:textColor="@color/colorWrite"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/brandxq_list_pic_url"
+                app:layout_constraintLeft_toLeftOf="@+id/brandxq_list_pic_url"
+                app:layout_constraintRight_toRightOf="@+id/brandxq_list_pic_url"
+                app:layout_constraintTop_toTopOf="@+id/brandxq_list_pic_url" />
+
+            <TextView
+                android:id="@+id/brandxq_tv_simple_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:text="介绍"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brandxq_list_pic_url" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/colorHui" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/brandxq_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</ScrollView>
